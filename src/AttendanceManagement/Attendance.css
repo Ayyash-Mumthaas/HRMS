@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .AMPdashboard{
     width: 75%;
     position: relative;
@@ -16,12 +21,13 @@
     border: 1px solid rgba(128, 128, 128, 0.589);
     margin-top: 20px;
     border-radius: 5px;
+    gap: 50px;
 }
 .attendanceHeader nav ul li{
     list-style: none;
     border-radius: 5px;
-    padding: 10px;
-    background-color: rgb(222, 222, 222);
+    padding: 10px 20px;
+    /* margin-left: 10px; */
 }
 .attendanceHeader a{
     text-decoration: none;
@@ -32,7 +38,7 @@
 
 
 .active{
-    background-color: #CE073D;
+    background-color: #d81045;
 }
 .active:hover{
     background-color: #ff0044;
@@ -41,6 +47,98 @@
 .active a{
     color: white;
 }
-.active:hover a{
+/* .active:hover a{
     font-weight: bold;
+} */
+
+
+.recodeTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recodeTable th, .recodeTable td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.recodeTable th {
+    background-color: #c51b48;
+    color: white;
+    font-weight: bold;
+}
+
+.recodeTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.recodeTable tr:hover {
+    background-color: #ddd;
+    transition: 0.3s ease;
+}
+
+
+/* Form Container */
+.container {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* max-width: 500px; */
+    margin: 30px auto;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Submit Button */
+button {
+    background: #c51b48;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    input {
+        font-size: 14px;
+    }
 }

@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 function AttendanceRecords() {
     return (
         <div className="AMPdashboard">
-            <header>
+        <h1>Attendance Records</h1>
+            <header className="attendanceHeader">
                 <nav>
                     <ul>
                         <li>
@@ -21,7 +22,34 @@ function AttendanceRecords() {
                 </nav>
             </header>
             <main>
-                <h1>Attendance qwertyuiop</h1>
+                <div>
+                    <table className="recodeTable">
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Check IN</th>
+                            <th>Check Out</th>
+                            <th>Working Hours</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>xxxxxxxxxx</td>
+                            <td>3/10/2025</td>
+                            <td>7:10</td>
+                            <td>2:50</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>xxxxxxxxxx</td>
+                            <td>3/10/2025</td>
+                            <td>7:10</td>
+                            <td>2:50</td>
+                            <td>10</td>
+                        </tr>
+                    </table>
+                </div>
             </main>
         </div>
     );

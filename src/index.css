@@ -1,13 +1,129 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Payroll Container */
+.payroll-container {
+  margin-left: 20%; /* Space for the sidebar */
+  padding: 20px;
+  width: calc(100% - 250px); /* Adjust width to fit the remaining space */
+  background: #f9f9f9; /* Light background for the payroll section */
+  min-height: 100vh; /* Ensure it covers the full height */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Payroll Table Styling */
+.payroll-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures rounded corners for the table */
+  margin-top: 8%;
+  margin-bottom: 20px;
+}
+
+.payroll-table th,
+.payroll-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd; /* Light border for rows */
+}
+
+.payroll-table th {
+  background: #3498db; /* Blue header for the table */
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.payroll-table td {
+  font-size: 14px;
+  color: #333; /* Darker text for better readability */
+}
+
+.payroll-table tr:hover {
+  background-color: #f1f1f1; /* Light hover effect for rows */
+}
+
+/* Payroll Form Styling */
+.payroll-form {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.payroll-form h2 {
+  margin-bottom: 20px;
+  color: #2c3e50; /* Dark blue for headings */
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.payroll-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none; /* Remove default outline */
+  transition: border-color 0.3s ease;
+}
+
+.payroll-form input:focus {
+  border-color: #3498db; /* Highlight input on focus */
+}
+
+.payroll-form button {
+  background-color: #3498db; /* Blue button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.payroll-form button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Delete Button Styling */
+.delete-btn {
+  background: #e74c3c; /* Red for delete button */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #c0392b; /* Darker red on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .payroll-container {
+    margin-left: 0; /* Remove sidebar margin on smaller screens */
+    width: 100%; /* Full width on mobile */
+    padding: 10px;
+  }
+
+  .payroll-table th,
+  .payroll-table td {
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+
+  .payroll-form input {
+    font-size: 12px; /* Smaller input font size for mobile */
+  }
+
+  .payroll-form h2 {
+    font-size: 1.2rem; /* Smaller heading for mobile */
+  }
 }
